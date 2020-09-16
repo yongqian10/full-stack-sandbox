@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chat App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="robots" content="index,follow" />
+    <link rel="icon" href="./images/twitter_socialnetwork_20007.ico" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="http://localhost:5500/socket.io/socket.io.js"></script>
+  </head>
+  <!-----------------------------------body------------------------------------------------>
+
+  <body>
+    <div id="message-container"></div>
+    <form id="send-container">
+      <input type="text" id="messgae-input" />
+      <button type="submit" id="send-button">Send</button>
+    </form>
+    <script src="/javascripts/app.js"></script>
+  </body>
+</html>
+
+<!--                                                                                            -->
