@@ -10,7 +10,7 @@
         "sourceType": "module",
         "ecmaFeatures": {
             "jsx": true
-        }
+        },
         "project": "./tsconfig.json"
     },
     "extends": [
@@ -30,5 +30,38 @@
                 "semi": true
             }
         ]
-    }
+    },
+    "overrides": [
+        {
+            "files": ["*.js", "*.jsx"],
+            "parser": 'babel-eslint',
+            "parserOptions": {
+                "sourceType": "module",
+                "ecmaFeatures": {
+                    "jsx": true
+                }
+            },
+            "extends": [
+                "prettier",
+                "airbnb",
+            ],
+            "env": {
+                "es6": true,
+                "browser": true,
+                "node": true
+            },
+            "rules": {
+                "@typescript-eslint/recommended": "off",
+                "prettier/prettier": [
+                    "error",
+                    {
+                        "trailingComma": "es5",
+                        "singleQuote": true,
+                        "printWidth": 120,
+                        "semi": true
+                    }
+                ]
+            }
+        }
+    ]
 }
